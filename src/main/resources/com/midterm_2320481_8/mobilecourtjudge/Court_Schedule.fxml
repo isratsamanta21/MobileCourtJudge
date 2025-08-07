@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarabmobilecourt.CourtSchedule">
+    <Label layoutX="180.0" layoutY="20.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="View Court Schedule" />
+
+    <TableView fx:id="scheduleTV" layoutX="50.0" layoutY="60.0" prefHeight="200.0" prefWidth="536.0">
+        <columns>
+            <TableColumn fx:id="caseIdTC" prefWidth="100.0" text="Case ID" />
+            <TableColumn fx:id="caseTitleTC" prefWidth="150.0" text="Case Title" />
+            <TableColumn fx:id="dateTC" prefWidth="100.0" text="Date" />
+            <TableColumn fx:id="timeTC" prefWidth="80.0" text="Time" />
+            <TableColumn fx:id="locationTC" prefWidth="120.0" text="Court Room" />
+        </columns>
+    </TableView>
+
+    <!-- Filter Controls -->
+    <Label layoutX="50.0" layoutY="270.0" text="Filter by:" />
+    <TextField fx:id="searchField" layoutX="100.0" layoutY="267.0" prefWidth="150.0" />
+    <Button fx:id="filterBtn" layoutX="260.0" layoutY="267.0" prefWidth="80.0" text="Search" />
+    <Button fx:id="clearFilterBtn" layoutX="350.0" layoutY="267.0" prefWidth="80.0" text="Clear" />
+    <Button fx:id="printScheduleBtn" layoutX="210.0" layoutY="300.0" prefWidth="140.0" text="Print Schedule" />
+    <Button fx:id="backBtn" layoutX="370.0" layoutY="300.0" prefWidth="140.0" text="Back to Dashboard" />
+   <Button fx:id="printScheduleBtn1" layoutX="50.0" layoutY="300.0" prefWidth="140.0" text="View Details" />
+
+</AnchorPane>

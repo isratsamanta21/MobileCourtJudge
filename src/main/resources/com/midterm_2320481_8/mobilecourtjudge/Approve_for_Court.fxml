@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarabmobilecourt.ApproveForController">
+    <Label layoutX="180.0" layoutY="20.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Approve Cases for Court Submission" />
+    <TableView fx:id="casesTV" layoutX="43.0" layoutY="54.0" prefHeight="200.0" prefWidth="500.0">
+        <columns>
+            <TableColumn fx:id="caseIdTC" prefWidth="100.0" text="Case ID" />
+            <TableColumn fx:id="caseTitleTC" prefWidth="150.0" text="Case Title" />
+            <TableColumn fx:id="evidenceStatusTC" prefWidth="100.0" text="Evidence Status" />
+            <TableColumn fx:id="approvalStatusTC" prefWidth="150.0" text="Approval Status" />
+        </columns>
+    </TableView>
+    <Button fx:id="reviewEvidenceBtn" layoutX="50.0" layoutY="270.0" prefWidth="140.0" text="Review Evidence" />
+    <Label fx:id="notificationLabel" layoutX="50.0" layoutY="310.0" prefHeight="50.0" prefWidth="500.0" />
+   <Button fx:id="reviewEvidenceBtn1" layoutX="230.0" layoutY="270.0" prefWidth="140.0" text="Approve Case" />
+   <Button fx:id="reviewEvidenceBtn11" layoutX="403.0" layoutY="270.0" prefWidth="140.0" text="Request Changes" />
+   <Button layoutX="447.0" layoutY="348.0" mnemonicParsing="false" onAction="#backonactionbutton" prefHeight="26.0" prefWidth="99.0" text="Back" />
+</AnchorPane>

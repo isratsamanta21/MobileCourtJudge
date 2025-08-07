@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.simulatingoperationsofarabmobilecourt.RecordPayment"
+            prefHeight="400.0" prefWidth="600.0">
+    <Label layoutX="62.0" layoutY="31.0" prefHeight="40.0" prefWidth="299.0" text="RECORD FINE PAYMENT - FINE COLLECTOR">
+        <font>
+            <Font name="System Bold" size="17.0" />
+        </font>
+    </Label>
+
+    <!-- Fines Table -->
+    <TableView fx:id="finesTable" layoutX="54.0" layoutY="89.0" prefHeight="192.0" prefWidth="550.0">
+        <columns>
+            <TableColumn fx:id="caseIdCol" prefWidth="100" text="Case ID" />
+            <TableColumn fx:id="offenderCol" prefWidth="150" text="Offender" />
+            <TableColumn fx:id="amountCol" prefWidth="100" text="Amount" />
+            <TableColumn fx:id="statusCol" prefWidth="150" text="Status" />
+        </columns>
+    </TableView>
+
+    <!-- Payment Form -->
+    <Label layoutX="20" layoutY="320" text="Payment Amount:" />
+    <TextField fx:id="paymentAmountField" layoutX="120" layoutY="317" prefWidth="120" />
+
+    <Label layoutX="20" layoutY="360" text="Payment Method:" />
+    <ComboBox fx:id="paymentMethodCombo" layoutX="120" layoutY="357" prefWidth="150" promptText="Select method" />
+
+    <Label layoutX="20" layoutY="390" text="Payment Date:" />
+    <DatePicker fx:id="paymentDatePicker" layoutX="120" layoutY="387" />
+
+    <Label layoutX="20" layoutY="420" text="Reference:" />
+    <TextField fx:id="referenceField" layoutX="120" layoutY="417" prefWidth="200" />
+
+    <!-- Action Buttons -->
+    <Button fx:id="submitBtn" layoutX="70.0" layoutY="490.0" prefWidth="120" text="SUBMIT" />
+    <Button fx:id="backBtn" layoutX="230" layoutY="490" prefWidth="120" text="BACK" />
+
+    <!-- Status Message -->
+    <Label fx:id="statusLabel" layoutX="20" layoutY="530" prefWidth="640" />
+
+</AnchorPane>

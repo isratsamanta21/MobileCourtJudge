@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarabmobilecourt.SendReminders">
+    <Label layoutX="62.0" layoutY="31.0" prefHeight="40.0" prefWidth="399.0" text="SEND PAYMENT REMINDERS - FINE COLLECTOR">
+        <font>
+            <Font name="System Bold" size="17.0" />
+        </font>
+    </Label>
+
+    <!-- Overdue Fines Table -->
+    <TableView fx:id="overdueFinesTable" layoutX="54.0" layoutY="89.0" prefHeight="192.0" prefWidth="550.0">
+        <columns>
+            <TableColumn fx:id="caseIdCol" prefWidth="100" text="Case ID" />
+            <TableColumn fx:id="offenderCol" prefWidth="150" text="Offender" />
+            <TableColumn fx:id="amountCol" prefWidth="100" text="Amount" />
+            <TableColumn fx:id="dueDateCol" prefWidth="150" text="Due Date" />
+        </columns>
+    </TableView>
+
+    <!-- Reminder Options -->
+    <Label layoutX="20" layoutY="320" text="Reminder Type:" />
+    <ComboBox fx:id="reminderTypeCombo" layoutX="130.0" layoutY="316.0" prefHeight="26.0" prefWidth="158.0" promptText="Select type" />
+
+    <Label layoutX="20" layoutY="360" text="Message:" />
+    <TextArea fx:id="messageArea" layoutX="120" layoutY="357" prefHeight="60.0" prefWidth="226.0" promptText="Enter reminder message..." />
+
+    <!-- Action Buttons -->
+    <Button fx:id="sendBtn" layoutX="70.0" layoutY="490.0" prefWidth="120" text="SEND REMINDERS" />
+    <Button fx:id="backBtn" layoutX="230" layoutY="490" prefWidth="120" text="BACK" />
+
+    <!-- Status Message -->
+    <Label fx:id="statusLabel" layoutX="20" layoutY="530" prefWidth="640" />
+
+</AnchorPane>
