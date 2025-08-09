@@ -12,7 +12,7 @@
 
     <!-- Session Selection -->
     <Label layoutX="50.0" layoutY="60.0" text="Select Session:" />
-    <ComboBox fx:id="sessionComboBox" layoutX="150.0" layoutY="57.0" prefWidth="200.0" />
+    <ComboBox fx:id="sessionComboBox" layoutX="150.0" layoutY="57.0" onAction="#sessionOnAction" prefWidth="200.0" />
 
     <!-- Report Details -->
     <Label layoutX="50.0" layoutY="100.0" text="Case ID:" />
@@ -35,16 +35,16 @@
     <Label layoutX="50.0" layoutY="250.0" text="Format:" />
     <RadioButton fx:id="excelRadio" layoutX="220.0" layoutY="250.0" text="Excel" />
     <RadioButton fx:id="wordRadio" layoutX="300.0" layoutY="250.0" text="Word" />
-    <Button fx:id="backBtn" layoutX="320.0" layoutY="290.0" prefWidth="150.0" text="Back" />
+    <Button fx:id="back" layoutX="320.0" layoutY="290.0" onAction="#backOnAction" prefWidth="150.0" text="Back" />
 
     <!-- Status Message -->
     <Label fx:id="statusLabel" layoutX="50.0" layoutY="330.0" prefHeight="50.0" prefWidth="500.0" />
-   <RadioButton fx:id="excelRadio1" layoutX="158.0" layoutY="250.0" text="PDF" />
-   <Button fx:id="backBtn1" layoutX="115.0" layoutY="290.0" prefWidth="150.0" text="Generate Report" />
-   <Button fx:id="backBtn2" layoutX="368.0" layoutY="57.0" prefWidth="150.0" text="Load Session" />
-   <TextField layoutX="150.0" layoutY="96.0" />
-   <TextField layoutX="150.0" layoutY="126.0" />
-   <TextField layoutX="150.0" layoutY="156.0" />
-   <TextField layoutX="150.0" layoutY="187.0" />
+   <RadioButton fx:id="pDFRadio1" layoutX="158.0" layoutY="250.0" text="PDF" />
+   <Button fx:id="generateReport" layoutX="115.0" layoutY="290.0" onAction="#generateReportOnAction" prefWidth="150.0" text="Generate Report" />
+   <Button fx:id="loadSession" layoutX="368.0" layoutY="57.0" onAction="#loadSessionOnAction" prefWidth="150.0" text="Load Session" />
+   <TextField fx:id="caseIDField" layoutX="150.0" layoutY="96.0" />
+   <TextField fx:id="judgeField" layoutX="150.0" layoutY="126.0" />
+   <TextField fx:id="dateField" layoutX="150.0" layoutY="156.0" />
+   <TextField fx:id="durationField" layoutX="150.0" layoutY="187.0" />
 
 </AnchorPane>

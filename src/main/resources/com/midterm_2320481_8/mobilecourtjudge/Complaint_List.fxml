@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarabmobilecourt.ComplaintList">
-    <TableView fx:id="complaintsTable" layoutX="54.0" layoutY="89.0" prefHeight="192.0" prefWidth="550.0">
+    <TableView fx:id="complaintsTableView" layoutX="54.0" layoutY="89.0" prefHeight="192.0" prefWidth="550.0">
         <columns>
             <TableColumn fx:id="caseIdCol" prefWidth="100" text="Case ID" />
             <TableColumn fx:id="typeCol" prefWidth="150" text="Complaint Type" />
@@ -28,9 +28,9 @@
     <DatePicker fx:id="startDatePicker" layoutX="100" layoutY="387" />
     <Label layoutX="20" layoutY="420" text="Notes:" />
     <TextArea fx:id="notesArea" layoutX="100" layoutY="420" prefHeight="40.0" prefWidth="200" />
-    <Button fx:id="backBtn" layoutX="230" layoutY="490" prefWidth="120" text="BACK" />
+    <Button fx:id="backBtn" layoutX="230" layoutY="490" onAction="#BACKOnActionButton" prefWidth="120" text="BACK" />
     <Label fx:id="statusLabel" layoutX="20" layoutY="530" prefWidth="640" />
-    <Button fx:id="backBtn1" layoutX="70.0" layoutY="490.0" prefWidth="120" text="ASSIGN CASE" />
+    <Button fx:id="ASSIGNCASEButton" layoutX="70.0" layoutY="490.0" onAction="#ASSIGNCASEOnAction" prefWidth="120" text="ASSIGN CASE" />
    <Label layoutX="62.0" layoutY="31.0" prefHeight="40.0" prefWidth="299.0" text="ASSIGN COMPLAINTS - RAB OFFICER">
       <font>
          <Font name="System Bold" size="17.0" />

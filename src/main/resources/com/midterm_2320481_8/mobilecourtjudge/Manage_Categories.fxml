@@ -31,12 +31,12 @@
 
     <Label layoutX="20" layoutY="340" text="Fine Amount:" />
     <TextField fx:id="amountField" layoutX="120" layoutY="337" prefWidth="150" />
-    <Button fx:id="updateBtn" layoutX="200.0" layoutY="380.0" prefWidth="120" text="UPDATE" />
-    <Button fx:id="backBtn" layoutX="460.0" layoutY="380.0" prefWidth="120" text="BACK" />
+    <Button fx:id="updateButton" layoutX="200.0" layoutY="380.0" onAction="#updateOnAction" prefWidth="120" text="UPDATE" />
+    <Button fx:id="backButton" layoutX="460.0" layoutY="380.0" onAction="#backOnAction" prefWidth="120" text="BACK" />
 
     <!-- Status Message -->
     <Label fx:id="statusLabel" layoutX="20" layoutY="420" prefWidth="640" />
-   <Button fx:id="updateBtn1" layoutX="54.0" layoutY="380.0" prefWidth="120" text="ADD CATEGORY" />
-   <Button fx:id="backBtn1" layoutX="330.0" layoutY="380.0" prefWidth="120" text="DEACTIVATE" />
+   <Button fx:id="addCategoryButton" layoutX="54.0" layoutY="380.0" onAction="#addCategoryOnAction" prefWidth="120" text="ADD CATEGORY" />
+   <Button fx:id="deactivateButton" layoutX="330.0" layoutY="380.0" onAction="#deactivateOnAction" prefWidth="120" text="DEACTIVATE" />
 
 </AnchorPane>

@@ -17,7 +17,7 @@
     <ComboBox fx:id="statusFilterCombo" layoutX="80" layoutY="57" prefWidth="120" promptText="Status" />
     <ComboBox fx:id="officerFilterCombo" layoutX="210" layoutY="57" prefWidth="150" promptText="Issuing Officer" />
     <TextField fx:id="searchField" layoutX="370" layoutY="57" prefWidth="200" promptText="Search case ID or name" />
-    <Button fx:id="applyFiltersBtn" layoutX="580" layoutY="57" prefWidth="80" text="Apply" />
+    <Button fx:id="applyFilters" layoutX="580" layoutY="57" onAction="#applyFiltersOnAction" prefWidth="80" text="Apply" />
 
     <!-- Pending Fines Table -->
     <TableView fx:id="finesTable" layoutX="3.0" layoutY="140.0" prefHeight="194.0" prefWidth="674.0">
@@ -40,11 +40,11 @@
 
     <Label layoutX="340" layoutY="390" text="Violation Details:" />
     <TextArea fx:id="violationDetailsArea" editable="false" layoutX="340" layoutY="410" prefHeight="60" prefWidth="340" />
-    <Button fx:id="backBtn" layoutX="412.0" layoutY="480.0" prefWidth="180" text="BACK" />
+    <Button fx:id="backButton" layoutX="412.0" layoutY="480.0" onAction="#backOnAction" prefWidth="180" text="BACK" />
 
     <!-- Status Message -->
     <Label fx:id="statusLabel" layoutX="20" layoutY="520" prefWidth="660" />
-   <Button fx:id="backBtn1" layoutX="210.0" layoutY="480.0" prefWidth="180" text="RECORD PAYMENT" />
-   <Button fx:id="backBtn11" layoutX="19.0" layoutY="480.0" prefWidth="180" text="DOWNLOAD FINE SLIP" />
+   <Button fx:id="RECORDPAYMENTButton" layoutX="210.0" layoutY="480.0" onAction="#recordPaymentOnAction" prefWidth="180" text="RECORD PAYMENT" />
+   <Button fx:id="backBtn11" layoutX="19.0" layoutY="480.0" onAction="#downloadFineSlipOnAction" prefWidth="180" text="DOWNLOAD FINE SLIP" />
 
 </AnchorPane>

@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarabmobilecourt.ExportMonthlyReport">
-    <Label layoutX="62.0" layoutY="31.0" prefHeight="40.0" prefWidth="425.0" text="EXPORT MONTHLY FINE REPORT - FINE COLLECTOR">
+    <Label layoutX="62.0" layoutY="31.0" prefHeight="40.0" prefWidth="425.0" text="EXPORT MONTHLY FINE REPORT ">
         <font>
             <Font name="System Bold" size="17.0" />
         </font>
@@ -35,11 +35,11 @@
     <!-- Export Options -->
     <Label layoutX="20" layoutY="320" text="Export Format:" />
     <ComboBox fx:id="formatCombo" layoutX="120" layoutY="317" prefWidth="150" />
-    <Button fx:id="backBtn" layoutX="352.0" layoutY="360.0" prefWidth="120" text="BACK" />
+    <Button fx:id="backButton" layoutX="352.0" layoutY="360.0" onAction="#backOnAction" prefWidth="120" text="BACK" />
 
     <!-- Status Message -->
     <Label fx:id="statusLabel" layoutX="20" layoutY="400" prefWidth="640" />
-   <Button fx:id="backBtn1" layoutX="54.0" layoutY="360.0" prefWidth="120" text="GENERATE" />
-   <Button fx:id="backBtn11" layoutX="202.0" layoutY="360.0" prefWidth="120" text="EXPORT" />
+   <Button fx:id="generateButton" layoutX="54.0" layoutY="360.0" onAction="#generateOnAction" prefWidth="120" text="GENERATE" />
+   <Button fx:id="exportButton" layoutX="202.0" layoutY="360.0" onAction="#exportOnAction" prefWidth="120" text="EXPORT" />
 
 </AnchorPane>

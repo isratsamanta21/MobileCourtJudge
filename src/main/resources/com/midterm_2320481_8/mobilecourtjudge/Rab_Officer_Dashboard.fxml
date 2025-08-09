@@ -8,14 +8,14 @@
     <Label layoutX="221.0" layoutY="20.0" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="RAB OFFICER DASHBOARD" />
 
     <!-- Menu Buttons -->
-    <Button fx:id="complaintListBtn" layoutX="38.0" layoutY="70.0" prefWidth="200.0" text="Complaint List" />
-    <Button fx:id="myInvestigationsBtn" layoutX="38.0" layoutY="137.0" prefWidth="200.0" text="My Investigations" />
-    <Button fx:id="requestEvidenceBtn" layoutX="38.0" layoutY="210.0" prefWidth="200.0" text="Request Evidence" />
-    <Button fx:id="viewEvidenceBtn" layoutX="38.0" layoutY="273.0" prefWidth="200.0" text="View Evidence" />
-    <Button fx:id="approveCourtBtn" layoutX="446.0" layoutY="70.0" prefWidth="200.0" text="Approve for Court" />
-    <Button fx:id="courtScheduleBtn" layoutX="446.0" layoutY="137.0" prefWidth="200.0" text="Court Schedule" />
-    <Button fx:id="downloadReportBtn" layoutX="446.0" layoutY="206.0" prefWidth="200.0" text="Download Report" />
-    <Button fx:id="finalReportBtn" layoutX="446.0" layoutY="273.0" prefWidth="200.0" text="Submit Final Report" />
-   <Button fx:id="finalReportBtn1" layoutX="238.0" layoutY="365.0" prefWidth="200.0" text="LOGOUT" />
+    <Button fx:id="complaintList" layoutX="38.0" layoutY="70.0" onAction="#ComplaintListOnAction" prefWidth="200.0" text="Complaint List" />
+    <Button fx:id="myInvestigations" layoutX="38.0" layoutY="137.0" onAction="#CourtScheduleOnAction" prefWidth="200.0" text="My Investigations" />
+    <Button fx:id="requestEvidence" layoutX="38.0" layoutY="210.0" onAction="#RequestEvidenceOnAction" prefWidth="200.0" text="Request Evidence" />
+    <Button fx:id="viewEvidence" layoutX="38.0" layoutY="273.0" onAction="#ViewEvidenceOnAction" prefWidth="200.0" text="View Evidence" />
+    <Button fx:id="approveCourt" layoutX="446.0" layoutY="70.0" onAction="#ApproveforCourtOnAction" prefWidth="200.0" text="Approve for Court" />
+    <Button fx:id="courtSchedule" layoutX="446.0" layoutY="137.0" onAction="#CourtScheduleOnAction" prefWidth="200.0" text="Court Schedule" />
+    <Button fx:id="downloadReport" layoutX="446.0" layoutY="206.0" onAction="#DownloadReportOnAction" prefWidth="200.0" text="Download Report" />
+    <Button fx:id="submitFinalReport" layoutX="446.0" layoutY="273.0" onAction="#SubmitFinalReportOnAction" prefWidth="200.0" text="Submit Final Report" />
+   <Button fx:id="LOGOUT" layoutX="238.0" layoutY="365.0" onAction="#LOGOUTOnAction" prefWidth="200.0" text="LOGOUT" />
 
 </AnchorPane>

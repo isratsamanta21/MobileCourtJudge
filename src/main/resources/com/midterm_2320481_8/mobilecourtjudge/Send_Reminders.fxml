@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarabmobilecourt.SendReminders">
-    <Label layoutX="62.0" layoutY="31.0" prefHeight="40.0" prefWidth="399.0" text="SEND PAYMENT REMINDERS - FINE COLLECTOR">
+    <Label layoutX="62.0" layoutY="31.0" prefHeight="40.0" prefWidth="399.0" text="SEND PAYMENT REMINDERS ">
         <font>
             <Font name="System Bold" size="17.0" />
         </font>
@@ -28,14 +28,14 @@
 
     <!-- Reminder Options -->
     <Label layoutX="20" layoutY="320" text="Reminder Type:" />
-    <ComboBox fx:id="reminderTypeCombo" layoutX="130.0" layoutY="316.0" prefHeight="26.0" prefWidth="158.0" promptText="Select type" />
+    <ComboBox fx:id="reminderTypeCombobox" layoutX="130.0" layoutY="316.0" prefHeight="26.0" prefWidth="158.0" promptText="Select type" />
 
     <Label layoutX="20" layoutY="360" text="Message:" />
-    <TextArea fx:id="messageArea" layoutX="120" layoutY="357" prefHeight="60.0" prefWidth="226.0" promptText="Enter reminder message..." />
+    <TextArea fx:id="messageArea" layoutX="120" layoutY="357" prefHeight="60.0" prefWidth="226.0" />
 
     <!-- Action Buttons -->
-    <Button fx:id="sendBtn" layoutX="70.0" layoutY="490.0" prefWidth="120" text="SEND REMINDERS" />
-    <Button fx:id="backBtn" layoutX="230" layoutY="490" prefWidth="120" text="BACK" />
+    <Button fx:id="sendButton" layoutX="70.0" layoutY="490.0" onAction="#sendOnAction" prefWidth="120" text="SEND REMINDERS" />
+    <Button fx:id="backButton" layoutX="230" layoutY="490" onAction="#backOnAction" prefWidth="120" text="BACK" />
 
     <!-- Status Message -->
     <Label fx:id="statusLabel" layoutX="20" layoutY="530" prefWidth="640" />

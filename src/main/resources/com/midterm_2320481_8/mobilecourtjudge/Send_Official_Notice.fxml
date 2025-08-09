@@ -33,10 +33,10 @@
     <Label layoutX="20" layoutY="380" text="Notice Content:" />
     <Label layoutX="20" layoutY="510" text="Delivery Method:" />
     <ComboBox fx:id="deliveryMethodCombo" layoutX="120" layoutY="507" prefWidth="150" />
-    <Button fx:id="backBtn" layoutX="490" layoutY="550" prefWidth="150" text="BACK" />
+    <Button fx:id="backButton" layoutX="490" layoutY="550" onAction="#backOnAction" prefWidth="150" text="BACK" />
     <Label fx:id="statusLabel" layoutX="20" layoutY="590" prefWidth="660" />
-   <Button fx:id="backBtn1" layoutX="306.0" layoutY="547.0" prefWidth="150" text="SEND NOTICE" />
-   <Button fx:id="backBtn11" layoutX="120.0" layoutY="547.0" prefWidth="150" text="PREVIEW NOTICE" />
+   <Button fx:id="sendNoticeButton" layoutX="306.0" layoutY="547.0" onAction="#sendNoticeOnAction" prefWidth="150" text="SEND NOTICE" />
+   <Button fx:id="PreviewNoticeButton" layoutX="120.0" layoutY="547.0" onAction="#PreviewNoticeOnAction" prefWidth="150" text="PREVIEW NOTICE" />
    <TextArea layoutX="120.0" layoutY="380.0" prefHeight="94.0" prefWidth="200.0" />
 
 </AnchorPane>

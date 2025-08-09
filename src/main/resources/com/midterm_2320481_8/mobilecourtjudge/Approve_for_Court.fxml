@@ -16,9 +16,9 @@
             <TableColumn fx:id="approvalStatusTC" prefWidth="150.0" text="Approval Status" />
         </columns>
     </TableView>
-    <Button fx:id="reviewEvidenceBtn" layoutX="50.0" layoutY="270.0" prefWidth="140.0" text="Review Evidence" />
+    <Button fx:id="reviewEvidenceButton" layoutX="50.0" layoutY="270.0" onAction="#reviewEvidenceOnAction" prefWidth="140.0" text="Review Evidence" />
     <Label fx:id="notificationLabel" layoutX="50.0" layoutY="310.0" prefHeight="50.0" prefWidth="500.0" />
-   <Button fx:id="reviewEvidenceBtn1" layoutX="230.0" layoutY="270.0" prefWidth="140.0" text="Approve Case" />
-   <Button fx:id="reviewEvidenceBtn11" layoutX="403.0" layoutY="270.0" prefWidth="140.0" text="Request Changes" />
-   <Button layoutX="447.0" layoutY="348.0" mnemonicParsing="false" onAction="#backonactionbutton" prefHeight="26.0" prefWidth="99.0" text="Back" />
+   <Button fx:id="approveCaseButton" layoutX="230.0" layoutY="270.0" onAction="#approveCaseOnAction" prefWidth="140.0" text="Approve Case" />
+   <Button fx:id="requestChangesButton" layoutX="403.0" layoutY="270.0" onAction="#requestChangesOnAction" prefWidth="140.0" text="Request Changes" />
+   <Button fx:id="BackButton" layoutX="447.0" layoutY="348.0" mnemonicParsing="false" onAction="#backonaction" prefHeight="26.0" prefWidth="99.0" text="Back" />
 </AnchorPane>

@@ -17,7 +17,7 @@
     <TableView fx:id="casesTable" layoutX="25.0" layoutY="205.0" prefHeight="139.0" prefWidth="604.0">
         <columns>
             <TableColumn fx:id="caseIdCol" prefWidth="204.79998779296875" text="Case ID" />
-            <TableColumn fx:id="titleCol" prefWidth="179.99993896484375" text="Investigation Title" />
+            <TableColumn fx:id="InvestigationTitleCol" prefWidth="179.99993896484375" text="Investigation Title" />
             <TableColumn fx:id="statusCol" prefWidth="268.0000305175781" text="Status" />
         </columns>
     </TableView>
@@ -28,18 +28,18 @@
 
 
     <Label layoutX="31.0" layoutY="136.0" text="Investigation Title:" />
-    <TextField fx:id="titleField" layoutX="147.0" layoutY="132.0" prefHeight="26.0" prefWidth="182.0" />
+    <TextField fx:id="InvestigationTitleTextField" layoutX="147.0" layoutY="132.0" prefHeight="26.0" prefWidth="182.0" />
     <Label layoutX="20.0" layoutY="382.0" text="Attachments:" />
     <ListView fx:id="attachmentsList" layoutX="16.0" layoutY="424.0" prefHeight="80" prefWidth="238.0">
         <placeholder>
             <Label text="No files attached" />
         </placeholder>
     </ListView>
-    <Button layoutX="98.0" layoutY="377.0" onAction="#onAddFilesClicked" prefHeight="26.0" prefWidth="97.0" text="ADD FILES" />
+    <Button fx:id="ADDFILESButton" layoutX="98.0" layoutY="377.0" onAction="#AddFileOnAction" prefHeight="26.0" prefWidth="97.0" text="ADD FILES" />
     <HBox layoutX="20" layoutY="540" spacing="20" />
     <Label fx:id="statusLabel" layoutX="20" layoutY="580" />
-   <TextField fx:id="titleField1" layoutX="147.0" layoutY="65.0" prefHeight="26.0" prefWidth="182.0" />
-   <Button layoutX="27.0" layoutY="514.0" mnemonicParsing="false" text="SUBMIT REPORT" />
-     <Button fx:id="backBtn" layoutX="304.0" layoutY="540.0" onAction="#onBackClicked" text="BACK" />
+   <TextField fx:id="SelectedCaseTextField" layoutX="147.0" layoutY="65.0" prefHeight="26.0" prefWidth="182.0" />
+   <Button fx:id="SUBMITREPORTButton" layoutX="27.0" layoutY="514.0" mnemonicParsing="false" onAction="#SUBMITREPORTOnAction" text="SUBMIT REPORT" />
+     <Button fx:id="BACKButton" layoutX="304.0" layoutY="540.0" onAction="#BACKOnAction" text="BACK" />
 
 </AnchorPane>

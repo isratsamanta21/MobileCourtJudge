@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.midterm_2320481_8.mobilecourtjudge.UpdatePayments">
+   <children>
+      <Label layoutX="182.0" layoutY="22.0" prefHeight="38.0" prefWidth="180.0" text="Update Payments">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="85.0" text="Case:" />
+      <Label layoutX="47.0" layoutY="129.0" text="New Status:" />
+      <Label layoutX="47.0" layoutY="173.0" text="Remarks:" />
+      <ComboBox fx:id="casecombobox" layoutX="122.0" layoutY="81.0" prefWidth="150.0" />
+      <ComboBox fx:id="newStatusCombobox" layoutX="122.0" layoutY="125.0" prefWidth="150.0" />
+      <TextArea fx:id="remarksTextField" layoutX="109.0" layoutY="173.0" prefHeight="92.0" prefWidth="150.0" />
+      <Button fx:id="saveButton" layoutX="145.0" layoutY="284.0" mnemonicParsing="false" onAction="#saveOnAction" text="Save" />
+      <Button fx:id="backButton" layoutX="246.0" layoutY="346.0" mnemonicParsing="false" onAction="#backOnAction" text="Back" />
+   </children>
+</AnchorPane>
