@@ -6,8 +6,6 @@
 
 <AnchorPane prefHeight="437.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarabmobilecourt.RabOfficerDashboard">
     <Label layoutX="221.0" layoutY="20.0" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="RAB OFFICER DASHBOARD" />
-
-    <!-- Menu Buttons -->
     <Button fx:id="complaintList" layoutX="38.0" layoutY="70.0" onAction="#ComplaintListOnAction" prefWidth="200.0" text="Complaint List" />
     <Button fx:id="myInvestigations" layoutX="38.0" layoutY="137.0" onAction="#CourtScheduleOnAction" prefWidth="200.0" text="My Investigations" />
     <Button fx:id="requestEvidence" layoutX="38.0" layoutY="210.0" onAction="#RequestEvidenceOnAction" prefWidth="200.0" text="Request Evidence" />
