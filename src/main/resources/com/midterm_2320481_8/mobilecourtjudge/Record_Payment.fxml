@@ -10,14 +10,12 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarabmobilecourt.RecordPayment">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.midterm_2320481_8.mobilecourtjudge.RecordPayment">
     <Label layoutX="200.0" layoutY="14.0" prefHeight="40.0" prefWidth="299.0" text="RECORD FINE PAYMENT ">
         <font>
             <Font name="System Bold" size="17.0" />
         </font>
     </Label>
-
-    <!-- Fines Table -->
     <TableView fx:id="finesTable" layoutX="54.0" layoutY="89.0" prefHeight="192.0" prefWidth="550.0">
         <columns>
             <TableColumn fx:id="caseIdCol" prefWidth="100" text="Case ID" />
@@ -27,7 +25,6 @@
         </columns>
     </TableView>
 
-    <!-- Payment Form -->
     <Label layoutX="20" layoutY="320" text="Payment Amount:" />
     <TextField fx:id="paymentAmountField" layoutX="120" layoutY="317" prefWidth="120" />
 
@@ -40,11 +37,8 @@
     <Label layoutX="20" layoutY="420" text="Reference:" />
     <TextField fx:id="referenceField" layoutX="120" layoutY="417" prefWidth="200" />
 
-    <!-- Action Buttons -->
     <Button fx:id="submitButton" layoutX="70.0" layoutY="490.0" onAction="#submitOnAction" prefWidth="120" text="SUBMIT" />
-    <Button fx:id="backbutton" layoutX="230" layoutY="490" onAction="#backOnAction" prefWidth="120" text="BACK" />
-
-    <!-- Status Message -->
+    <Button fx:id="backbutton" layoutX="465.0" layoutY="490.0" onAction="#backOnAction" prefWidth="120" text="BACK" />
     <Label fx:id="statusLabel" layoutX="20" layoutY="530" prefWidth="640" />
 
 </AnchorPane>

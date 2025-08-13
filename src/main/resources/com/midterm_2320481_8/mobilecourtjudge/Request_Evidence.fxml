@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane prefHeight="628.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarabmobilecourt.RequestEvidence">
+<AnchorPane prefHeight="628.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.midterm_2320481_8.mobilecourtjudge.RequestEvidence">
     <!-- Title -->
     <Label layoutX="20" layoutY="20" style="-fx-font-weight: bold; -fx-font-size: 18;" text="REQUEST ADDITIONAL EVIDENCE" />
 

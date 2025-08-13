@@ -8,7 +8,7 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="608.0" prefWidth="814.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarabmobilecourt.ViewEvidence">
+<AnchorPane prefHeight="608.0" prefWidth="814.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.midterm_2320481_8.mobilecourtjudge.ViewEvidence">
     <Label layoutX="20" layoutY="20" style="-fx-font-weight: bold; -fx-font-size: 18;" text="VIEW SUBMITTED EVIDENCE" />
 
 

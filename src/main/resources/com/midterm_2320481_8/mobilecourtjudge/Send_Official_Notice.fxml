@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarabmobilecourt.SendOfficialNotice">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.midterm_2320481_8.mobilecourtjudge.SendOfficialNotice">
     <Label layoutX="62.0" layoutY="31.0" prefHeight="40.0" prefWidth="350.0" text="SEND OFFICIAL FINE NOTICE ">
       <font>
          <Font name="System Bold" size="24.0" />

@@ -9,25 +9,19 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarabmobilecourt.GenerateReports">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.midterm_2320481_8.mobilecourtjudge.GenerateReports">
     <Label layoutX="62.0" layoutY="31.0" prefHeight="40.0" prefWidth="373.0" text="GENERATE FINE REPORTS ">
         <font>
             <Font name="System Bold" size="17.0" />
         </font>
     </Label>
-
-    <!-- Report Criteria -->
     <Label layoutX="20" layoutY="80" text="Report Type:" />
     <ComboBox fx:id="reportTypeCombo" layoutX="120" layoutY="77" prefWidth="150" />
-
     <Label layoutX="20" layoutY="120" text="Date Range:" />
     <Label layoutX="270" layoutY="120" />
     <DatePicker fx:id="endDatePicker" layoutX="309.0" layoutY="118.0" prefHeight="26.0" prefWidth="161.0" />
-
     <Label layoutX="20" layoutY="160" text="Officer:" />
     <ComboBox fx:id="officerCombo" layoutX="120" layoutY="157" prefWidth="150" />
-
-    <!-- Generated Reports Table -->
     <TableView fx:id="reportsTable" layoutX="54.0" layoutY="200.0" prefHeight="150.0" prefWidth="550.0">
         <columns>
             <TableColumn fx:id="reportIdCol" prefWidth="100" text="Report ID" />
@@ -36,12 +30,8 @@
             <TableColumn fx:id="generatedDateCol" prefWidth="150" text="Generated On" />
         </columns>
     </TableView>
-
-    <!-- Action Buttons -->
     <Button fx:id="generateButton" layoutX="70.0" layoutY="370.0" onAction="#generateOnAction" prefWidth="120" text="GENERATE" />
     <Button fx:id="backButton" layoutX="230" layoutY="370" onAction="#backOnaction" prefWidth="120" text="BACK" />
-
-    <!-- Status Message -->
     <Label fx:id="statusLabel" layoutX="20" layoutY="410" prefWidth="640" />
    <Label layoutX="290.0" layoutY="122.0" text="to">
       <font>

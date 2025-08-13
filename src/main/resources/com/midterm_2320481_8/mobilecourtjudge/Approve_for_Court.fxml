@@ -6,7 +6,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarabmobilecourt.ApproveForController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.midterm_2320481_8.mobilecourtjudge.ApproveForController">
     <Label layoutX="180.0" layoutY="20.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Approve Cases for Court Submission" />
     <TableView fx:id="casesTV" layoutX="43.0" layoutY="54.0" prefHeight="200.0" prefWidth="500.0">
         <columns>
