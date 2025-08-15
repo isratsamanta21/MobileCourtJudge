@@ -1,5 +1,3 @@
-package com.midterm_2320481_8.mobilecourtjudge;
-
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -9,50 +7,42 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class monitorsiteperimeter {
+public class SecurityLogReport {
 
     @FXML
-    private Button attachButton;
+    private Button AttachButton;
 
     @FXML
-    private Button backButton;
+    private ComboBox<?> AttachComboBox;
 
     @FXML
-    private ComboBox<?> complaintTypeCombobox;
+    private Button BackButton;
 
     @FXML
-    private TextArea descriptionTextArea;
+    private Button SubmitReportButton;
 
     @FXML
-    private ComboBox<?> locationCombox;
-
-    @FXML
-    private Button submitButton;
-
-    @FXML
-    void attachPhotoOnAction(ActionEvent event) {
+    void AttachButtonOnAction(ActionEvent event) {
 
     }
 
     @FXML
-    void backOnAction(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("monitor_site_perimeter.fxml"));
+    void BackButtonOnAction(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Security_Log_&_Report.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
         currentStage.setScene(newScene);
         currentStage.show();
 
-
     }
 
     @FXML
-    void submitOnAction(ActionEvent event) {
+    void SubmitReportButtonOnAction(ActionEvent event) {
 
     }
 

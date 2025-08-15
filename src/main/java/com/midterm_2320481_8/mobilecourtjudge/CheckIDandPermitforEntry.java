@@ -1,6 +1,5 @@
 package com.midterm_2320481_8.mobilecourtjudge;
 
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -9,50 +8,58 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class monitorsiteperimeter {
-
-    @FXML
-    private Button attachButton;
+public class CheckIDandPermitforEntry {
 
     @FXML
     private Button backButton;
 
     @FXML
-    private ComboBox<?> complaintTypeCombobox;
+    private Label caseAccessLabel;
 
     @FXML
-    private TextArea descriptionTextArea;
+    private Button denyButton;
 
     @FXML
-    private ComboBox<?> locationCombox;
+    private Button grantEntryButton;
 
     @FXML
-    private Button submitButton;
+    private Label nameLabel;
 
     @FXML
-    void attachPhotoOnAction(ActionEvent event) {
+    private ComboBox<?> qrCodeComboBox;
+
+    @FXML
+    private Label resultLabel;
+
+    @FXML
+    private Button scanNowCombox;
+
+    @FXML
+    private Label validIdLabel;
+
+    @FXML
+    void backButtonOnAction(ActionEvent event) {
 
     }
 
     @FXML
-    void backOnAction(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("monitor_site_perimeter.fxml"));
+    void denyButtonOnAction(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Check_ID_and_Permit_for_Entry.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
         currentStage.setScene(newScene);
         currentStage.show();
 
-
     }
 
     @FXML
-    void submitOnAction(ActionEvent event) {
+    void grantEntryButtonOnAction(ActionEvent event) {
 
     }
 
