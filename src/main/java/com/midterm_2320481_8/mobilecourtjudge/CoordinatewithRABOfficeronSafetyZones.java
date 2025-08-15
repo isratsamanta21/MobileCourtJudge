@@ -7,54 +7,42 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.DatePicker;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-
-public class ReportSuspiciousActivity {
-
-    @FXML
-    private Button attachEvidenceButton;
+public class CoordinatewithRABOfficeronSafetyZones {
 
     @FXML
     private Button backButton;
 
     @FXML
-    private TextArea descriptionTextArea;
+    private Button sendToRabButton;
 
     @FXML
-    private TextField locationTextField;
+    private ComboBox<?> sessionComboBox;
 
     @FXML
-    private DatePicker reportsuspeciousactivityDatePicker;
+    private TextArea zoneMapArea;
 
     @FXML
-    private Button submitReportButton;
+    private TextField zoneMapTextField;
 
     @FXML
-    void attachEvidenceOnAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void backButtonOnAction(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("report_suspicious_activity.fxml"));
+    void backButtonOnAction(ActionEvent event) {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Coordinate_with_RAB_Officer_on_Safety_Zones.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
         currentStage.setScene(newScene);
         currentStage.show();
 
-
     }
 
     @FXML
-    void submitReportButtonOnAction(ActionEvent event) {
+    void sendToRabButtonOnAction(ActionEvent event) {
 
     }
 
 }
-
