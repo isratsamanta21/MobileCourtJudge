@@ -8,49 +8,45 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class SendReminders {
+public class RecordSecurityLogandHandover {
 
     @FXML
-    private TableColumn<?, ?> amountCol;
+    private Button BackButton;
 
     @FXML
-    private Button backButton;
+    private DatePicker DateDatePicker;
 
     @FXML
-    private TableColumn<?, ?> caseIdCol;
+    private Label dateLabel;
 
     @FXML
-    private TableColumn<?, ?> dueDateCol;
+    private TableColumn<?, ?> descriptionTableColumn;
 
     @FXML
-    private TextArea messageArea;
+    private Button generateReportButton;
 
     @FXML
-    private TableColumn<?, ?> offenderCol;
+    private Label logEntriesLabel;
 
     @FXML
-    private TableView<?> overdueFinesTable;
+    private ComboBox<?> shiftComboBox;
 
     @FXML
-    private ComboBox<?> reminderTypeCombobox;
+    private Label shiftLabel;
 
     @FXML
-    private Button sendButton;
+    private TableColumn<?, ?> timeTableColumn;
 
     @FXML
-    private Label statusLabel;
-
-    @FXML
-    void backOnAction(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Fine_Collector_Dashboard.fxml"));
+    void BackButtonOnAction(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Record_Security_Log_and_Handover_Report5.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
@@ -60,7 +56,7 @@ public class SendReminders {
     }
 
     @FXML
-    void sendOnAction(ActionEvent event) {
+    void generateReportButtonOnAction(ActionEvent event) {
 
     }
 

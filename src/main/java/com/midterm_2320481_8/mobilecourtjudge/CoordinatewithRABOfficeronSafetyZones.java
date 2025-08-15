@@ -1,6 +1,5 @@
 package com.midterm_2320481_8.mobilecourtjudge;
 
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -10,49 +9,39 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-
-public class monitorsiteperimeter {
-
-    @FXML
-    private Button attachButton;
+public class CoordinatewithRABOfficeronSafetyZones {
 
     @FXML
     private Button backButton;
 
     @FXML
-    private ComboBox<?> complaintTypeCombobox;
+    private Button sendToRabButton;
 
     @FXML
-    private TextArea descriptionTextArea;
+    private ComboBox<?> sessionComboBox;
 
     @FXML
-    private ComboBox<?> locationCombox;
+    private TextArea zoneMapArea;
 
     @FXML
-    private Button submitButton;
+    private TextField zoneMapTextField;
 
     @FXML
-    void attachPhotoOnAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void backOnAction(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("monitor_site_perimeter.fxml"));
+    void backButtonOnAction(ActionEvent event) {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Coordinate_with_RAB_Officer_on_Safety_Zones.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
         currentStage.setScene(newScene);
         currentStage.show();
 
-
     }
 
     @FXML
-    void submitOnAction(ActionEvent event) {
+    void sendToRabButtonOnAction(ActionEvent event) {
 
     }
 
