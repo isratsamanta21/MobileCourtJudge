@@ -12,6 +12,8 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+
 public class CoordinatewithRABOfficeronSafetyZones {
 
     @FXML
@@ -30,7 +32,7 @@ public class CoordinatewithRABOfficeronSafetyZones {
     private TextField zoneMapTextField;
 
     @FXML
-    void backButtonOnAction(ActionEvent event) {
+    void backButtonOnAction(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Coordinate_with_RAB_Officer_on_Safety_Zones.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
