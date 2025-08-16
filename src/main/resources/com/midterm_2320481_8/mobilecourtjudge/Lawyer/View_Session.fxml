@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="562.0" prefWidth="847.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.midterm_2320481_8.mobilecourtjudge.Lawyer.ViewSession">
+   <children>
+      <TableView fx:id="TableView" layoutX="68.0" layoutY="62.0" prefHeight="310.0" prefWidth="478.0">
+        <columns>
+          <TableColumn fx:id="IDColumn" prefWidth="90.39996337890625" text="ID" />
+          <TableColumn fx:id="DayColumn" prefWidth="89.60003662109375" text="Day" />
+            <TableColumn fx:id="TimeColumn" prefWidth="79.20001220703125" text="Time" />
+            <TableColumn fx:id="TypeColumn" prefWidth="104.0" text="Type" />
+            <TableColumn fx:id="RegionColumn" prefWidth="112.79996337890623" text="Region" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
